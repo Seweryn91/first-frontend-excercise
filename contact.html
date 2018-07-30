@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Contact page - SI WEEK</title>
+	<link rel="stylesheet" href="css/style.css">
+	
+	
+<script src="script/behavior.js"></script>
+	
+	
+</head>
+<body style="background-color:#00001a;">
+<header>
+<a href="index.html">INDEX</a>
+<a href="about.html">ABOUT</a>
+<a href="contact.html">CONTACT</a>
+</header>
+
+<div class="headline">
+	<img src="https://cdn.pixabay.com/photo/2018/07/09/16/59/clouds-3526558_960_720.jpg" alt="Background photo" style="width:100%;">
+	<div class="centered">
+	<h1>Contact page</h1>
+	</div>
+</div>
+
+<div class="content"><h2> contact me :) </h2>
+
+<form id="contact" action="" method="post" onsubmit="return validation()"> <!--action="mailto@owner.com"-->
+
+                <label for="fname">Your name: </label><br>
+                <input type="text" name="firstname" id="fname" onkeyup="switchVisibility()">
+                <div class="error" id="fname-error" style="display: none">Please, start your name with capital letter. Use letters only</div>
+                <br><br>
+                <label for="e-mail">Your e-mail: </label><br>
+                <input type="text" name="e-mail" id="e-mail" onkeyup="switchVisibility()">
+                <div class="error" id="email-error" style="display: none">Incorrect email</div>
+                <br><br>
+				<label for="message">Your message: </label><br>
+                <textarea name="message" id="message" rows="10" cols="50"></textarea>
+                <div class="error" id="message-error" style="display: none">Message is empty</div>
+                <br>
+                <button type="submit" id="send" style="float:left" disabled>SEND</button><br><br>
+				<button type="reset" id="reset">RESET</button>
+
+	</form>
+
+	<br><br>
+   </div>
+   
+<div class="footer">second SI-week front-end</div>
+</body>
+</html>
